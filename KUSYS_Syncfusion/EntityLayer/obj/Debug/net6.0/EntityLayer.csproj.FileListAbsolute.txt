@@ -1,0 +1,48 @@
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Project\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

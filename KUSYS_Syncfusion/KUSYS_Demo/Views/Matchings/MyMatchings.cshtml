@@ -1,0 +1,147 @@
+﻿@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Student & Course Matchings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header card-header-success card-header-text" style="margin-bottom:20px">
+                <div class="card-text"><h4 class="card-title">@ViewBag.Title</h4></div>
+            </div>
+            <div class="col-lg-12 control-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <table style="width:100%;">
+                                <tr>
+                                    <td width="75px">
+                                        <label class="bold">Course</label>
+                                    </td>
+                                    <td class="bold">
+                                        :
+                                    </td>
+                                    <td>
+                                        <ejs-multiselect id="Courses" enabled="true" dataSource="@ViewBag.CourseList" placeholder="Multiple Selection Possible" allowFiltering="true" filtering="CoursesOnfiltering" popupHeight="500px">
+                                            <e-multiselect-fields text="text" value="value"></e-multiselect-fields>
+                                        </ejs-multiselect>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-1">
+                            <table style="width:100%;">
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td>
+                                        <ejs-button id="btnSaveMatch" cssClass="e-primary" content="Save Matching"></ejs-button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <ejs-grid id="MatchingGrid" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "Delete", "Search", "ExcelExport" })" allowExcelExport="true" allowGrouping="false" allowFiltering="true" allowPaging="true">
+                    <e-data-manager url="/Matchings/UrlDatasource" removeUrl="/Matchings/Remove" adaptor="UrlAdaptor"></e-data-manager>
+                    <e-grid-searchSettings fields="@(new string[] { "CreationDate", "CourseDetail"})" operator="contains" ignoreCase="true"></e-grid-searchSettings>
+                    <e-grid-editSettings allowAdding="false" allowDeleting="true" allowEditing="false"></e-grid-editSettings>
+                    <e-grid-pagesettings pageCount="4" pageSizes="true"></e-grid-pagesettings>
+                    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+                    <e-grid-columns>
+                        <e-grid-column field="Id" isPrimaryKey="true" visible="false"></e-grid-column>
+                        <e-grid-column field="CreationDate" headerText="Creation Date" format="MM/dd/yyyy HH:mm:ss" width="150" textAlign="Left"></e-grid-column>
+                        <e-grid-column field="CourseDetail" headerText="Course" textAlign="Left" width="150"></e-grid-column>
+                    </e-grid-columns>
+                </ejs-grid>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("MatchingGrid").ej2_instances[0];
+
+        if (args.item.id === 'MatchingGrid_excelexport') {
+            gridObj.excelExport();
+        }
+    }
+
+    function CoursesOnfiltering(e) {
+        var query = new ej.data.Query();
+        query = (e.text !== '') ? query.where('text', 'contains', e.text, true) : query;
+        e.updateData(@Html.Raw(JsonConvert.SerializeObject(ViewBag.CourseList)), query);
+    }
+
+    document.getElementById('btnSaveMatch').onclick = () => {
+        var CourseInfo = document.getElementById("Courses").ej2_instances[0];
+
+        var CourseIDs = CourseInfo.value;
+
+        if (CourseIDs != null) {
+            var Course = CourseInfo.text;
+
+            var info = {
+                CourseRecordIDs: CourseIDs
+            }
+
+            var htmlContent = '<table class="table" style="text-align:left"><tr> <td style="font-weight:bold; width:90px;">Course/s</td> <td>:</td> <td>' + Course + '</td> </tr> </table>';
+            var htmlContentResult = htmlContent.replaceAll(",", "<br>");
+            Swal.fire({
+                title: "Do you approve of the course selection?",
+                html: htmlContentResult,
+                icon: "warning",
+                allowEscapeKey: true,
+                allowOutsideClick: true,
+                showCancelButton: true,
+                cancelButtonText: 'Cancel',
+                confirmButtonText: 'Save',
+                width: 650
+            }).then((result) => {
+                if (result.value) {
+                    $.ajax({
+                        url: "@Url.Action("SaveMatching", "Matchings")",
+                        type: "POST",
+                        datatype: "json",
+                        contentType: 'application/x-www-form-urlencoded',
+                        data: info,
+                        success: function (data) {
+                            Swal.fire({
+                                title: "Success",
+                                icon: 'success',
+                                text: "Matching  has been successfully saved",
+                                showConfirmButton: true,
+                                allowEscapeKey: false,
+                                allowOutsideClick: false,
+                                confirmButtonText: "CLOSE"
+                            });
+
+                            window.location.href = '@Url.Action("MyMatchings", "Matchings")';
+                        }
+                    });
+                }
+            });
+        }
+        else {
+            Swal.fire({
+                title: "Warning",
+                icon: 'warning',
+                text: "Student and Course must be selected!",
+                showConfirmButton: true,
+                allowEscapeKey: false,
+                allowOutsideClick: false,
+                confirmButtonText: "CLOSE",
+            });
+        }
+    };
+
+</script>
+
+<style type="text/css">
+    .bold {
+        font-weight: bold;
+    }
+</style>

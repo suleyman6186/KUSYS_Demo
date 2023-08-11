@@ -1,0 +1,68 @@
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\SLY\Desktop\KUSYS_Project\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\SLY\Desktop\KUSYS\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\SLY\Desktop\KUSYS - Copy (2)\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\SLY\Desktop\KUSYS_Syncfusion\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

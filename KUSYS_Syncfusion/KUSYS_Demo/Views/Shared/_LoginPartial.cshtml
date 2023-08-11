@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using EntityLayer.Concrete;
+
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    var values = await UserManager.FindByNameAsync(User.Identity?.Name);
+    string Title = "Welcome " + values.FirstName + " " + values.LastName;
+
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-action="Profile" asp-controller="Account" title="@Title">@Title</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-action="Login" asp-controller="Account" title="Logout">Logout</a>
+    </li>
+}
+</ul>

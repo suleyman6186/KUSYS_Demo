@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KUSYS_Demo.props" />
+</Project>

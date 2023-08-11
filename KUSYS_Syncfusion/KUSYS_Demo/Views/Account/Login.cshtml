@@ -1,0 +1,46 @@
+﻿@model UserSignInViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="loginColumns animated fadeInDown">
+    <div class="row">
+        <div class="col-md-6 white">
+            <h2 class="font-bold">Welcome to KUSYS_Demo</h2>
+            <img src="~/koc_uni_logo.png" width="380" />
+        </div>
+        <div class="col-md-6">
+            <div class="ibox-content">
+                <form class="m-t" role="form" asp-action="Login">
+                    <div class="form-group">
+                        <input type="text" class="form-control" asp-for="@Model.username" placeholder="Username" required="">
+                        <span asp-validation-for="@Model.username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" asp-for="@Model.password" placeholder="Password" required="">
+                        <span asp-validation-for="@Model.password" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                    <div class="text-danger" asp-validation-summary="ModelOnly">
+                    </div>
+                    <a href="/Login/ForgotPassword/">
+                        <small>Forgot password?</small>
+                    </a>
+
+                    <p class="text-muted text-center">
+                        <small>Do not have an account?</small>
+                    </p>
+                    <a class="btn btn-sm btn-secondary btn-block" href="/RegisterUser/Index/">Create an Account</a>
+                </form>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <hr style="border-color:white!important" />
+    <div class="row white">
+        <div class="col-md-6">
+            © @DateTime.Today.Year - Koç University KUSYS_Demo - All Rights Reserved
+        </div>
+    </div>
+</div>

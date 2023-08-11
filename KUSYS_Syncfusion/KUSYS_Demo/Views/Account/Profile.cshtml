@@ -1,0 +1,59 @@
+﻿@using EntityLayer.Concrete;
+@model Student
+
+@{
+    ViewData["Title"] = "My Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header card-header-success card-header-text" style="margin-bottom:20px">
+                <div class="card-text"><h4 class="card-title">@ViewBag.Title</h4></div>
+            </div>
+
+            <div style="margin-left: 20px; margin-right: 20px; margin-bottom: 20px;">
+                <table>
+                    <tr>
+                        <td class="UIFormTableCell1">@Html.LabelFor(model => model.StudentId)</td>
+                        <td class="UIFormTableCell3">@Html.TextBoxFor(model => model.StudentId, new { type = "text", @class = "form-control UIForm", @readonly = true,})</td>
+                    </tr>
+                    <tr>
+                        <td class="UIFormTableCell1">@Html.LabelFor(model => model.FirstName)</td>
+                        <td class="UIFormTableCell3">@Html.TextBoxFor(model => model.FirstName, new { type = "text", @class = "form-control UIForm", @readonly = true })</td>
+                    </tr>
+                    <tr>
+                        <td class="UIFormTableCell1">@Html.LabelFor(model => model.LastName)</td>
+                        <td class="UIFormTableCell3">@Html.TextBoxFor(model => model.LastName, new { type = "text", @class = "form-control UIForm", @readonly = true })</td>
+                    </tr>
+                    <tr>
+                        <td class="UIFormTableCell1">@Html.LabelFor(model => model.BirthDate)</td>
+                        <td class="UIFormTableCell3">@Html.TextBoxFor(model => model.BirthDate.Date, "{0:MM/dd/yyyy}", new { type = "text", @class = "form-control UIForm", @readonly = true })</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .UIForm {
+        padding-left: 10px;
+    }
+
+    .UIFormTableCell1 {
+        vertical-align: middle !important;
+        padding: 5px;
+        min-width: 115px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 13px !important;
+        background-color: #e9ecef;
+    }
+
+    .UIFormTableCell3 {
+        vertical-align: middle !important;
+        width: 100%;
+    }
+</style>

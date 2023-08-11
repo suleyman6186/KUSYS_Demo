@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Students";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "userstatus", buttonOption = new { content = "Details", cssClass = "e-success e-details" } }); // custom
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header card-header-success card-header-text" style="margin-bottom:20px">
+                <div class="card-text"><h4 class="card-title">@ViewBag.Title</h4></div>
+            </div>
+            <div class="control-section">
+                <ejs-grid id="StudentGrid" toolbarClick="toolbarClick" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Search", "ExcelExport" })" commandClick="commandClick" allowExcelExport="true" allowFiltering="true" allowPaging="true">
+                    <e-data-manager url="/Students/UrlDatasource" insertUrl="/Students/Insert" updateUrl="/Students/Update" removeUrl="/Students/Remove" adaptor="UrlAdaptor"></e-data-manager>
+                    <e-grid-searchSettings fields="@(new string[] { "StudentId", "FirstName", "LastName","BirthDate"})" operator="contains" ignoreCase="true"></e-grid-searchSettings>
+                    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" showConfirmDialog="true"></e-grid-editSettings>
+                    <e-grid-pagesettings pageCount="4" pageSizes="true"></e-grid-pagesettings>
+                    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+                    <e-grid-columns>
+                        <e-grid-column field="Id" isPrimaryKey="true" visible="false"></e-grid-column>
+                        <e-grid-column field="StudentId" headerText="Student ID" validationRules="@(new { required=true, number=true})" textAlign="Left" width="150"></e-grid-column>
+                        <e-grid-column field="FirstName" headerText="First Name" validationRules="@(new { required=true})" width="150" textAlign="Left"></e-grid-column>
+                        <e-grid-column field="LastName" headerText="Last Name" validationRules="@(new { required=true})" width="150" textAlign="Left"></e-grid-column>
+                        <e-grid-column field="BirthDate" headerText="Birth Date" validationRules="@(new { required=true})" editType="datepickeredit" format="MM/dd/yyyy" width="150" textAlign="Left"></e-grid-column>
+                        <e-grid-column width="150" commands="commands"></e-grid-column>
+                    </e-grid-columns>
+                </ejs-grid>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function commandClick(args) {
+        var parseObject = JSON.parse(JSON.stringify(args.rowData));
+ 
+        var id = parseObject.id;
+        var studentId = parseObject.studentId;
+        var firstName = parseObject.firstName;
+        var lastName = parseObject.lastName;
+        var _birthDate = new Date(parseObject.birthDate);
+        var birthDate = _birthDate.toLocaleDateString('en-US');
+
+        Swal.fire({
+            title: "Student Detail",
+            html: '<table class="table"> <tr> <td style="font-weight:bold">ID</td> <td>:</td> <td>' + id + '</td> </tr> <tr> <td style="font-weight:bold">Student ID</td> <td>:</td> <td>' + studentId + '</td> </tr> <tr> <td style="font-weight:bold">First Name</td> <td>:</td> <td>' + firstName + '</td> </tr> <tr> <td style="font-weight:bold">Last Name</td> <td>:</td> <td>' + lastName + '</td> </tr> <tr> <td style="font-weight:bold">Birth Date</td> <td>:</td> <td>' + birthDate + '</td> </tr> </table>',
+            icon: 'info',
+            showConfirmButton: true,
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            confirmButtonText: "CLOSE",
+            width: 550
+        });
+    }
+
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("StudentGrid").ej2_instances[0];
+ 
+        if (args.item.id === 'StudentGrid_excelexport') {
+            gridObj.excelExport();
+        }
+    }
+</script>

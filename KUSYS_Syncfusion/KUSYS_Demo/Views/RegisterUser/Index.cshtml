@@ -1,0 +1,103 @@
+﻿@model UserSignUpViewModel 
+@{
+    ViewData["Title"] = "Register User";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KUSYS_Demo - Registration</title>
+
+    <link href="~/inspinia-gh-pages/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/css/animate.css" rel="stylesheet">
+    <link href="~/inspinia-gh-pages/css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            background: linear-gradient( rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30) ), url( @Url.Content("~/bgImage.jpg") ) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .white {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="middle-box text-center loginscreen animated fadeInDown" style="width:600px!important">
+        <div>
+            <div>
+                <h2 class="white">KUSYS-Demo</h2>
+            </div>
+            <h3 class="white">Student Registration</h3>
+            <p class="white">Create Account to Select Course</p>
+            <form class="m-t" role="form" asp-action="Index">
+                <div class="form-group">           
+                    <input type="text" class="form-control" asp-for="@Model.UserName" placeholder="Student ID Number">
+                    <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">           
+                    <input type="text" class="form-control" asp-for="@Model.FirstName" placeholder="First Name">
+                    <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" asp-for="@Model.LastName" placeholder="Last Name">
+                    <span asp-validation-for="@Model.LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" asp-for="@Model.BirthDate" placeholder="Birth Name">
+                    <span asp-validation-for="@Model.BirthDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">             
+                    <input type="email" class="form-control" asp-for="@Model.Mail" placeholder="Email">
+                    <span asp-validation-for="@Model.Mail" class="text-danger"></span>
+                </div>
+                <div class="form-group">      
+                    <input type="password" class="form-control" asp-for="@Model.Password" placeholder="Password" required="">
+                    <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" asp-for="@Model.ConfirmPassword" placeholder="Password Again" required="">
+                    <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+                </div>        
+                <div class="form-group white">
+                    <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> I have read and accept the terms of use. </label></div>
+                </div>
+                <button type="submit" class="btn btn-success block full-width m-b">Register</button>
+
+                <p class="text-muted text-center"><small>Already have an account?</small></p>
+                <a class="btn btn-sm btn-primary btn-block" href="/Account/Login/">Login</a>
+                
+                <div class="text-danger" asp-validation-summary="ModelOnly">
+
+                </div>
+            </form>
+            <p class="m-t white"> <small> &copy; @DateTime.Today.Year - KUSYS_Demo</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="~/inspinia-gh-pages/js/jquery-3.1.1.min.js"></script>
+    <script src="~/inspinia-gh-pages/js/popper.min.js"></script>
+    <script src="~/inspinia-gh-pages/js/bootstrap.js"></script>
+    <!-- iCheck -->
+    <script src="~/inspinia-gh-pages/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+</html>
